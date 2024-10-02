@@ -1,5 +1,6 @@
 defmodule CounterWeb.HomeLive do
   use CounterWeb, :live_view
+  use CounterNative, :live_view
 
   @impl true
   def mount(_params, _session, socket) do
@@ -18,4 +19,14 @@ defmodule CounterWeb.HomeLive do
   def handle_event("incr", _params, socket) do
     {:noreply, assign(socket, :counter, socket.assigns.counter + 1)}
   end
+
+  def handle_event("decr", _unsigned_params, socket) do
+    {:noreply, assign(socket, :counter, socket.assigns.counter - 1)}
+  end
+
+  def handle_event("incr-by", %{"by" => value}, socket) do
+    {value, _} = Integer.parse(value)
+    {:noreply, assign(socket, :counter, socket.assigns.counter + value)}
+  end
+
 end

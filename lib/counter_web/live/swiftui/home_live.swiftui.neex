@@ -1,0 +1,12 @@
+<ZStack>
+  <Rectangle class="background-black"/>
+  <VStack spacing="16">
+    <Text class="counter"><%= @counter %></Text>
+    <HStack spacing="8">
+      <.counter_button class="button-red" value={-10} />
+      <.counter_button class="button-orange" value={-1} />
+      <.counter_button class="button-green" value={1} />
+      <.counter_button class="button-blue" value={10} />
+    </HStack>
+  </VStack>
+</ZStack>
