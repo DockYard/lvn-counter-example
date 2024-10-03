@@ -56,10 +56,10 @@ defmodule Counter.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.5"},
-      {:live_view_native, "~> 0.3.0"},
-      {:live_view_native_stylesheet, "~> 0.3.0"},
-      {:live_view_native_swiftui, "~> 0.3.0"},
-      {:live_view_native_live_form, "~> 0.3.0"}
+      {:live_view_native, "~> 0.3.1"},
+      {:live_view_native_stylesheet, "~> 0.3.1"},
+      {:live_view_native_swiftui, "~> 0.3.1"},
+      {:live_view_native_live_form, "~> 0.3.1"}
     ]
   end
 
