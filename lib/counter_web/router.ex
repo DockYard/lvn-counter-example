@@ -22,7 +22,8 @@ defmodule CounterWeb.Router do
   scope "/", CounterWeb do
     pipe_through :browser
 
-    live "/", HomeLive
+    live "/", FormLive
+    live "/form", FormLive
   end
 
   # Other scopes may use custom stacks.
