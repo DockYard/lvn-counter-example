@@ -18,8 +18,8 @@ defmodule CounterWeb.FormLive do
       <input id="email" type="email" name="email"/>
       <button type="submit" >Save</button>
     </form>
-    Username: <%= @username %>
-    Email: <%= @email %>
+    <p>Username: <%= @username %></p>
+    <p>Email: <%= @email %></p>
     """
   end
 
